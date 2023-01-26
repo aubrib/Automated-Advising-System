@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Almarai:700|Inter:700");
+
+.desktop-1 {
+    align-items: flex-end;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    min-height: 1021px;
+    padding: 11px 20px;
+    width: 1440px;
+}
+
+.overlap-group {
+    align-items: flex-start;
+    align-self: center;
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    margin-top: 8px;
+    min-height: 596px;
+    padding: 36px 51px;
+    width: 897px;
+}
+
+.title {
+    -webkit-text-stroke: 1px var(--black);
+    align-self: center;
+    color: var(--claret);
+    font-family: var(--font-family-almarai);
+    font-size: var(font-size-xxxl);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 24px;
+    min-height: 66px;
+    width: 241px;
+}
+
+.overlap-group6 {
+    height: 103px;
+    margin-top: 44px;
+    position: relative;
+    width: 747px;
+}
+
+.password-a {
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 345px;
+}
+
+.rectangle-21 {
+    background-color: var(--white);
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: 55px;
+    width: 747px;
+}
+
+.overlap-group-container-1 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    gap: 67px;
+    margin-right: 38px;
+    margin-top: 58px;
+    min-width: 483px;
+}
+
+.overlap-group4 {
+    align-items: flex-end;
+    background-color: var(--claret);
+    border-radius: 10px;
+    display: flex;
+    height: 79px;
+    justify-content: flex-end;
+    min-width: 208px;
+    padding: 1px 14px;
+}
+
+.sign-in {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 58px;
+    width: 150px;
+}
+
+.overlap-group3 {
+    align-items: flex-end;
+    background-color: var(--claret);
+    border-radius: 10px;
+    display: flex;
+    height: 80px;
+    min-width: 208px;
+    padding: 7px 39px;
+}
+
+.sign-up {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 48px;
+    width: 129px;
+}
+
+.overlap-group5 {
+    height: 98px;
+    margin-top: 52px;
+    position: relative;
+    width: 747px;
+}
+
+.username-school-email {
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 471px;
+}
+
+.rectangle-20 {
+    background-color: var(--white);
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 747px;
+}
+
+.overlap-group-container {
+    align-items: flex-end;
+    display: flex;
+    gap: 74px;
+    margin-right: 119px;
+    min-width: 922px;
+}
+
+.overlap-group2 {
+    height: 70px;
+    position: relative;
+    width: 258px;
+}
+
+.rectangle-10 {
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 255px;
+}
+
+.rectangle-8 {
+    background-color: var(--white);
+    height: 70px;
+    left: 3px;
+    position: absolute;
+    top: 0;
+    width: 255px;
+}
+
+.overlap-group1 {
+    height: 187px;
+    position: relative;
+    width: 590px;
+}
+
+.rectangle-7 {
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 70px;
+    left: 335px;
+    position: absolute;
+    top: 117px;
+    width: 255px;
+}
+
+.rectangle-6 {
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    top: 117px;
+    width: 255px;
+}
+
+.advise-logo {
+    height: 132px;
+    left: 103px;
+    position: absolute;
+    top: 0;
+    width: 464px;
+}
+
+.aamu-logo {
+    height: 76px;
+    object-fit: cover;
+    width: 73px;
+}
