@@ -2,56 +2,53 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleguide.css">
+    <script src="login.js"></script>
 </head>
 <body>
-    <img class="aamu-logo" src="/Users/abowman/Desktop/SP23/CS 403/ADVISE/aamu-logo.png" alt="AAMU Logo" />
-    <img class="advise-logo" src="/Users/abowman/Desktop/SP23/CS 403/ADVISE/Advise-Logo.png" alt="Advise-Logo" />
-    <!--div class="overlap-group-container">
-        <div class="overlap-group1">
-            <div class="rectangle-6"></div>
-            <div class="rectangle-7"></div>
-        </div>
-        <div class="overlap-group2">
-            <div class="rectangle-8"></div>
-            <div class="rectangle-10"></div>
-        </div>
-    </div>-->
-    <div class="overlap-group">
-        <h1 class="title">WELCOME!</h1>
+    <img class="aamu-logo-1" src="/Users/abowman/Desktop/SP23/CS 403/ADVISE/aamu-logo.png" alt="AAMU Logo" />
+    <img class="advise-logo-1" src="/Users/abowman/Desktop/SP23/CS 403/ADVISE/Advise-Logo.png" alt="Advise-Logo" />
+    <div class="overlap-group-1">
+        <h1 class="title-1">WELCOME!</h1>
         <div class="block">
             <div class="block-1">
                 <label>Username (School Email):</label>
-                <input type="text" />
+                <input class="input-1" type="text" id="username"/>
             </div>
             <div class="block-2">
                 <label>Password (A-Number):</label>
-                <input type="text" />
+                <input class="input-2" type="password" id="password"/>
             </div>
         </div>
+        <br>
         <div class="row">
-            <input type="button" class="button" id="btnSignIn" value="Sign-In">
-            <input type="button" class="button" id="btnSignUp" value="Sign-Up">
-          </div>
-        <!--div class="overlap-group5">
-            <div class="username-school-email">Username (School Email):</div>
-                <input>-->
-            <!--label>Username (School Email):</label>
-            <input type="text" />-->
-            <!--div class="rectangle-20"></div>-->
-        <!--/div>-->
-        <!--div class="overlap-group6">
-            <div class="password-a inter-bold-black-30px">Password (A#):</div>
-            <div class="rectangle-21"></div>
+            <form id="loginForm">
+                <input type="button" class="button" name="SignIn" id="SignIn" value="Sign-In" onclick="signIn()">
+                <input type="button" class="button" name="SignUp" id="SignUp" value="Sign-Up" onclick="signUp()">
+            </form>
         </div>
-        <div class="overlap-group-container-1">
-            <div class="overlap-group4">
-                <div class="sign-in inter-bold-white-30px">SIGN IN</div>
-            </div>
-            <diiv class="overlap-group3">
-                <div class="sign-up inter-bold-white-30px">SIGN UP</div>
-            </diiv>
-            </div>
-        </div>-->
     </div>
 </body>
 </html>
+
+<!-- <div class="block">
+    <div class="block-4">
+        <label>A-Number (A00XXXXXX)</label>
+        <input class="input-4" type="text" id="password"/>
+    </div>
+    <div class="block-3">
+        <label>Full Name</label>
+        <input class="input-3" type="text" id="username"/>
+    </div>
+    <div class="block-4">
+        <label>Classification</label>
+        <input class="input-4" type="text" id="password"/>
+    </div>
+    <div class="block-3">
+        <label>GPA (X.XX)</label>
+        <input class="input-3" type="text" id="username"/>
+    </div>
+    <div class="block-3">
+        <label>School Email (@bulldogs.aamu.edu)</label>
+        <input class="input-3" type="text" id="username"/>
+    </div>
+</div> -->

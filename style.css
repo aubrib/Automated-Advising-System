@@ -12,7 +12,7 @@
     width: 1440px;
 }
 
-.overlap-group {
+.overlap-group-1 {
     /*align-items: flex-start;*/
     align-self: center;
     background-color: #d9d9d9;
@@ -28,20 +28,75 @@
     width: 897px;
 }
 
-.title {
-    /*-webkit-text-stroke: 1px var(--black);*/
+.overlap-group-2 {
+    /*align-items: flex-start;*/
     align-self: center;
-    /*color: var(--claret);*/
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 525px;
+    margin-top: 100px;
+    min-height: 696px;
+    padding: 36px 51px;
+    width: 680px;
+}
+
+.overlap-group-3 {
+    /*align-items: flex-start;*/
+    align-self: right;
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1425px;
+    margin-top: 50px;
+    min-height: 96px;
+    padding: 36px 51px;
+    width: 280px;
+}
+
+.overlap-group-4 {
+    align-self: center;
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 610px;
+    margin-top: 20px;
+    min-height: 250px;
+    padding: 36px 51px;
+    width: 1097px;
+}
+
+.title-1 {
+    align-self: center;
     color: black;
     font-family: var(--font-family-almarai);
     font-size: 50px;
-    /*font-size: var(font-size-xxxl);*/
     font-weight: 700;
-    /*letter-spacing: 30;*/
     line-height: normal;
     margin-top: 45px;
     min-height: 66px;
-    width: 241px;
+    width: 250px;
+}
+
+.title-2 {
+    align-self: center;
+    color: black;
+    font-family: var(--font-family-almarai);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
+    min-height: 66px;
+    width: 200px;
 }
 
 .overlap-group6 {
@@ -49,15 +104,6 @@
     margin-top: 44px;
     position: relative;
     width: 747px;
-}
-
-.password-a {
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: 345px;
 }
 
 .rectangle-21 {
@@ -97,6 +143,14 @@
     width: 150px;
 }
 
+/* .AdvisingPin {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 58px;
+    width: 150px;
+    text-align: center;
+} */
+
 .overlap-group3 {
     align-items: flex-end;
     background-color: var(--claret);
@@ -120,17 +174,6 @@
     position: relative;
     width: 747px;
 }
-
-/*.username-school-email {
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: relative;
-    top: 0;
-    width: 471px;
-    font-family: var(--font-family-almarai);
-    font-size: var(--font-size-xl);
-}*/
 
 .rectangle-20 {
     background-color: var(--white);
@@ -200,16 +243,31 @@
     width: 255px;
 }
 
-.advise-logo {
+.advise-logo-1 {
     height: 85px;
     width: auto;
-    position: absolute;
-    right: 775px;
-    top: 50px;
+    position: relative;
+    right: -650px;
+    top: 20px;
 }
 
-.aamu-logo {
+.advise-logo-2 {
+    height: 50px;
+    width: auto;
+    position: relative;
+    left: 750px;
+}
+
+.aamu-logo-1 {
     height: 90px;
+    object-fit: cover;
+    width: auto;
+    position: relative;
+    left: 0%;
+}
+
+.aamu-logo-2 {
+    height: 65px;
     object-fit: cover;
     width: auto;
     position: relative;
@@ -233,18 +291,69 @@ label {
     text-align: left;
     line-height: normal;
     top: 0;
-    width: 300px;
+    width: 500px;
     font-family: var(--font-family-almarai);
     font-size: var(--font-size-xl);
     color: var(--claret);
+}
+
+.input-1, .input-2 {
+    width: 900px;
+    border: 1px solid #000;
+    margin-top: 5px;
+    height: 35px;
+    float: none;
+    font-size: 20px;
+    display: inline-block;
+    right: 10px;
+    border-radius: 5px;
+}
+
+.input-3, .input-4 {
+    width: 675px;
+    border: 1px solid #000;
+    margin-top: 5px;
+    height: 35px;
+    float: none;
+    font-size: 20px;
+    display: inline-block;
+    right: 10px;
+    border-radius: 5px;
+}
+
+.input-5 {
+    width: 100px;
+    border: 1px solid #000;
+    margin-top: 5px;
+    height: 35px;
+    float: none;
+    font-size: 20px;
+    display: inline-block;
+    right: 10px;
+    border-radius: 5px;
 }
 
 .block {
     margin-top: 40px;
 }
 
+.form {
+    display: inline-block;
+    text-align: left;
+    line-height: normal;
+    top: 0;
+    width: 500px;
+    font-family: var(--font-family-almarai);
+    font-size: var(--font-size-xl);
+    color: var(--claret);
+}
+
 .block-1, .block-2 {
     margin-top: 30px;
+}
+
+.block-3, .block-4 {
+    margin-top: 15px;
 }
 
 .button {
@@ -254,15 +363,51 @@ label {
     font-weight: 600;
     width: 150px;
     margin:0 20px;
-    margin-top: 50px;
+    margin-top: 10px;
     display:inline-block;
     line-height: 60px;
     height: 60px;
 }
 
-.row {
-  text-align:center;
-  /*the same margin which is every button have, it is for small screen, and if you have many buttons.*/
-  margin-left:-20px;
-  margin-right:-20px;
+.row, .userinput-box {
+    text-align:center;
+    /*the same margin which is every button have, it is for small screen, and if you have many buttons.*/
+    margin-left:-20px;
+    margin-right:-20px;
 }
+
+hr {
+    height:3px;
+    border-width:0;
+    background-color:var(--claret);
+}
+
+p {
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-l);
+    text-align: center;
+}
+
+a {
+    color: var(--claret)
+}
+
+.subtitle {
+    margin-top: -15px;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    color: var(--claret);
+}
+
+.logout {
+    text-align: right;
+    margin-top: -40px;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--black)
+}
+
