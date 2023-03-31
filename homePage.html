@@ -16,11 +16,38 @@
             <p class="subtitle">Fall 2023</p>
             <input type="button" class="button" name="AdvisingPin" id="AdvisingPin" value="Generate" onclick="Random();">
             <input type="text" class="input-5" id="randGen" name="randGen" />
-            <!-- <p id="randGen"></p> -->
         </div>
-        <!-- <script>
-            document.getElementById("AdvisingPin").innerHTML = Math.floor((Math.random()*1000000)+1);
-        </script> -->
+    </div>
+    <div class="calculator-box">
+        <h1>GPA Calculator</h1>
+        <p class="gpa">This GPA Calculator is based on the American University grading system.</p>
+        <div id="course-wrapper">
+            <form class="key-0">
+                <p>
+                    <label id="course-row" for="courses">Courses:</label> 
+                    <label id="credit-row" for="credit-units">Credit Units:</label>
+                    <label id="grade-row" for="grade">Grades: </label>
+                </p>
+                <input type="text" placeholder="Course Code" class="courses key-0" required/>
+                <input type="number" class="credit-units key-0" placeholder="Credit Units" value="" required />
+                <select class="grade key-0" required>
+                    <option class="grade" value="select">Select</option>
+                    <option class="grade" value="4">A</option>
+                    <option class="grade" value="3">B</option>
+                    <option class="grade" value="2">C</option>
+                    <option class="grade" value="1">D</option>
+                    <option class="grade" value="0">F</option>
+                </select>
+            </form>
+        </div>
+        <div class="btn">
+            <button onclick="addCourse()">+ Add Course</button>
+            <button onclick="removeCourse()">- Remove Course</button>
+            <button onclick="calcGpa()">Calculate GPA</button>
+        </div>
+        <div class="lastp">
+            <p id="gpa-calc">Your GPA is:</p>
+        </div>
     </div>
 </body>
 </html>

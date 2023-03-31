@@ -1,5 +1,154 @@
 @import url("https://fonts.googleapis.com/css?family=Almarai:700|Inter:700");
 
+.calculator-box {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-almarai);
+    width: 50%;
+    height: auto;
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 28px;
+    margin: 100px auto;
+    margin-top: -245px;
+}
+
+#course-row {
+    font-size: var(--font-size-xl);
+    /* font-weight: bolder;  */
+    margin-left: -2%;
+}
+
+#credit-row {
+    font-size: var(--font-size-xl);
+    /* font-weight: bolder;  */
+    margin-left: 13%;
+}
+
+#grade-row {
+    font-size: var(--font-size-xl);
+    /* font-weight: bolder;  */
+    margin-left: 8%;
+}
+
+/* @media screen and (max-width: 1200px) {
+    .calculator-box {
+       width: 70%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .calculator-box {
+       width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .calculator-box {
+       width: 90%;
+    }
+}
+
+h1 {
+    padding: 15px;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid var(--black);
+    background-color: var(--claret);
+    color: white;
+}
+
+/* h1:hover {
+    padding: 15px;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid #3D515C;
+    background-color: #ccc;
+    color: #000;
+} */
+
+/* .gpa {
+    padding: 20px;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+#course-wrapper, form {
+    color: black;
+    padding-left: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input{
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+}
+
+select{
+    padding: 15px;
+    border: none;
+    border-radius: 7.5px;
+    width: 20%;
+}
+
+button {
+    width: 15%;
+    height: 40px;
+    padding: 1px;
+    margin: 5px auto;
+    border-width: 3px;
+    border-radius: 10%;
+    border-style: solid;
+}
+
+button:hover {
+    width: 15%;
+    height: 40px;
+    padding: 1px;
+    margin: 5px auto;
+    border-width: 3px;
+    border-radius: 10%;
+    border-style: solid;
+    color: #fff;
+    background: #000;
+    border-color: #000;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+/* .lastp {
+    border: 1px solid black;
+    background-color: var(--claret);
+    color: white;
+} */
+
+/* .lastp p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+} 
+
+.lastp p:hover {
+    background-color: #ccc;
+    color: #000;
+} */
+
 .desktop-1 {
     align-items: flex-end;
     background-color: var(--white);
@@ -68,11 +217,11 @@
     border-radius: 28px;
     display: flex;
     flex-direction: column;
-    margin-left: 610px;
+    margin-left: 465px;
     margin-top: 20px;
     min-height: 250px;
     padding: 36px 51px;
-    width: 1097px;
+    width: 1250px;
 }
 
 .title-1 {
