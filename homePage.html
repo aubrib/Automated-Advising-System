@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleguide.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="homePage.js"></script>
 </head>
 <body>
@@ -9,45 +11,136 @@
     <img class="advise-logo-2" src="/Users/abowman/Desktop/SP23/CS 403/ADVISE/Advise-Logo.png" alt="Advise-Logo" />
     <p class="logout"><a href="login.html">LOGOUT</a></p>
     <hr>
-    <div class="overlap-group-4"></div>
+    <div class="overlap-group-4">
+        <div class="textbox-1">
+            <p class="box-title-1">Student ID</p>
+            <p class="box-title-2">A00123456</p>
+        </div>
+        <div class="textbox-2">
+            <p class="box-title-3">Name</p>
+            <p class="box-title-4">Blair, Jane Doe</p>
+        </div>
+        <div class="textbox-3">
+            <p class="box-title-5">Degree</p>
+            <p class="box-title-6">Bachelor of Science</p>
+        </div>
+        <div class="textbox-4">
+            <p class="box-title-7">Level</p>
+            <p class="box-title-8">Undergraduate</p>
+            <p class="box-title-9">Classification</p>
+            <p class="box-title-10">Junior</p>
+            <p class="box-title-11">Major</p>
+            <p class="box-title-12">Computer Science</p>
+            <p class="box-title-13">College</p>
+            <p class="box-title-14">Engineer, Technolo & Phy Scien</p>
+            <p class="box-title-15">Academic Standing</p>
+            <p class="box-title-16">Good Standing</p>
+            <p class="box-title-17">GPA</p>
+            <p class="box-title-18">3.64</p>
+            <p class="box-title-19">Expected Graduation</p>
+            <p class="box-title-20">May 2024</p>
+        </div>
+    </div>
     <div class="overlap-group-3">
         <div class="row">
-            <p>Advising Pin </p>
-            <p class="subtitle">Fall 2023</p>
-            <input type="button" class="button" name="AdvisingPin" id="AdvisingPin" value="Generate" onclick="Random();">
+            <p style="font-weight: 700">Advising Pin </p>
+            <p class="subtitle" style="font-weight: 700">Fall 2023</p>
+            <input type="button" class="button" name="AdvisingPin" id="AdvisingPin" value="Generate" onclick="Random(); this.disabled = true;">
             <input type="text" class="input-5" id="randGen" name="randGen" />
         </div>
     </div>
-    <div class="calculator-box">
-        <h1>GPA Calculator</h1>
-        <p class="gpa">This GPA Calculator is based on the American University grading system.</p>
-        <div id="course-wrapper">
-            <form class="key-0">
-                <p>
-                    <label id="course-row" for="courses">Courses:</label> 
-                    <label id="credit-row" for="credit-units">Credit Units:</label>
-                    <label id="grade-row" for="grade">Grades: </label>
-                </p>
-                <input type="text" placeholder="Course Code" class="courses key-0" required/>
-                <input type="number" class="credit-units key-0" placeholder="Credit Units" value="" required />
-                <select class="grade key-0" required>
-                    <option class="grade" value="select">Select</option>
-                    <option class="grade" value="4">A</option>
-                    <option class="grade" value="3">B</option>
-                    <option class="grade" value="2">C</option>
-                    <option class="grade" value="1">D</option>
-                    <option class="grade" value="0">F</option>
-                </select>
-            </form>
+    <div class="calculator-box" id="layout">
+        <div class="pure-u-1">
+            <p style="font-weight: 700">GPA Calculator</p>
+            <hr>
         </div>
-        <div class="btn">
-            <button onclick="addCourse()">+ Add Course</button>
-            <button onclick="removeCourse()">- Remove Course</button>
-            <button onclick="calcGpa()">Calculate GPA</button>
-        </div>
-        <div class="lastp">
-            <p id="gpa-calc">Your GPA is:</p>
+        <div class="pure-u-2">
+            <p>Enter your current information. Your GPA will update as you add classes below.</p>
+            <p style="text-align: left;"><input type="text" class="small" id="current-gpa" value="0.00"></input> : Current GPA</p>
+			<p style="text-align: left;"><input type="text" class="small" id="current-hrs" value="0"></input> : Credit Hours Earned</p>
+            <hr>
+            <table id="gpa-table">
+                <thead>
+                        <tr>
+                                <td></td>
+                                <td>Course</td>
+                                <td>Credit Hours</td>
+                                <td>Grade</td>
+                                <td>Grade Points</td>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                                <td>1</td>
+                                <td><input type="text" class="coursename"></td>
+                                <td><input type="text" class="credithours small"></td>
+                                <td><select class="gpa_select small"></select></td>
+                                <td><input type="text" class="gradepoint small" readonly="readonly"></td>
+                        </tr>
+                        <tr>
+                                <td>2</td>
+                                <td><input type="text" class="coursename"></td>
+                                <td><input type="text" class="credithours small"></td>
+                                <td><select class="gpa_select small"></select></td>
+                                <td><input type="text" class="gradepoint small" readonly="readonly"></td>
+                        </tr>
+                        <tr>
+                                <td>3</td>
+                                <td><input type="text" class="coursename"></td>
+                                <td><input type="text" class="credithours small"></td>
+                                <td><select class="gpa_select small"></select></td>
+                                <td><input type="text" class="gradepoint small" readonly="readonly"></td>
+                        </tr>
+                        <tr>
+                                <td>4</td>
+                                <td><input type="text" class="coursename"></td>
+                                <td><input type="text" class="credithours small"></td>
+                                <td><select class="gpa_select small"></select></td>
+                                <td><input type="text" class="gradepoint small" readonly="readonly"></td>
+                        </tr>
+                        <tr>
+                                <td>5</td>
+                                <td><input type="text" class="coursename"></td>
+                                <td><input type="text" class="credithours small"></td>
+                                <td><select class="gpa_select small"></select></td>
+                                <td><input type="text" class="gradepoint small" readonly="readonly"></td>
+                        </tr>
+                        <tr>
+                                <td>6</td>
+                                <td><input type="text" class="coursename"></td>
+                                <td><input type="text" class="credithours small"></td>
+                                <td><select class="gpa_select small"></select></td>
+                                <td><input type="text" class="gradepoint small" readonly="readonly"></td> 
+                        </tr>
+                </tbody>
+                <tfoot>
+                        <tr>
+                                <td>&nbsp;</td>
+                                <td>Semester:</td>
+                                <td><input type="text" id="semester-credit-hours" class="small"></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" id="semester-grade-points" class="small"></td>
+                        </tr>
+                        <tr>
+                                <td>&nbsp;</td>
+                                <td>Overall:</td>
+                                <td><input type="text" id="total-credit-hours" class="small"></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" id="total-grade-points" class="small"></td>
+                        </tr>
+                        <tr>
+                                <td>&nbsp;</td>
+                                <td>GPA:</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" id="overall-gpa" class="small"></td>
+                        </tr>
+                </tfoot>
+            </table>
+            <input type="button" class="button" name="AddClass" id="add_row" value="Add Class">
+            <input type="button" class="button" name="RemoveClass" id="remove_row" value="Remove Class">
         </div>
     </div>
+    <div class="overlap-group-5"></div>
 </body>
 </html>
