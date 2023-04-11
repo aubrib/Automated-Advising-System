@@ -4,12 +4,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleguide.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="homePage.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="homePage.js"></script> 
 </head>
 <body>
     <img class="aamu-logo-2" src="/Users/abowman/Desktop/SP23/CS 403/ADVISE/aamu-logo.png" alt="AAMU Logo" />
     <img class="advise-logo-2" src="/Users/abowman/Desktop/SP23/CS 403/ADVISE/Advise-Logo.png" alt="Advise-Logo" />
-    <p class="logout"><a href="login.html">LOGOUT</a></p>
+    <!-- <p class="logout"><a href="login.html" onclick="logout()">LOGOUT</a></p> -->
+    <p id="logout" class="logout" onclick="logout()">LOGOUT</p>
     <hr>
     <div class="overlap-group-4">
         <div class="textbox-1">
@@ -43,7 +45,7 @@
     </div>
     <div class="overlap-group-3">
         <div class="row">
-            <p style="font-weight: 700">Advising Pin </p>
+            <p style="font-weight: 700">ADVISING PIN</p>
             <p class="subtitle" style="font-weight: 700">Fall 2023</p>
             <input type="button" class="button" name="AdvisingPin" id="AdvisingPin" value="Generate" onclick="Random(); this.disabled = true;">
             <input type="text" class="input-5" id="randGen" name="randGen" />
@@ -51,7 +53,7 @@
     </div>
     <div class="calculator-box" id="layout">
         <div class="pure-u-1">
-            <p style="font-weight: 700">GPA Calculator</p>
+            <p style="font-weight: 700">GPA CALCULATOR</p>
             <hr>
         </div>
         <div class="pure-u-2">
@@ -141,6 +143,67 @@
             <input type="button" class="button" name="RemoveClass" id="remove_row" value="Remove Class">
         </div>
     </div>
-    <div class="overlap-group-5"></div>
+    <div class="overlap-group-5">
+        <p class="title-3">IN PROGRESS</p>
+        <p class="class-1-1">CS 209</p>
+        <p class="class-1-2">Intro to Digital Logic</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">CS 321</p>
+        <p class="class-1-2">Principal of Info Security</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">CS 425</p>
+        <p class="class-1-2">Theory of Algorithms</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">CS 488</p>
+        <p class="class-1-2">Intro to Database Mgmt</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">ENG 205</p>
+        <p class="class-1-2">General Speech</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">ART 101</p>
+        <p class="class-1-2">Art Appreciation</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <div class="total-hrs">
+            <p class="title-4">TOTAL HOURS:</p>
+        </div>
+        <div class="textbox-5">
+            <p class="credit-hours">18 hrs</p>
+        </div>
+    </div>
+    <div class="overlap-group-6">
+        <p class="title-5">NEXT SEMESTER</p>
+        <p class="class-1-1">CS 386</p>
+        <p class="class-1-2">Cryptography</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">CS 384</p>
+        <p class="class-1-2">Operating Systems</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">CS 381</p>
+        <p class="class-1-2">Computer Organization</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">CS 314</p>
+        <p class="class-1-2">Advanced Programming</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">MTH 453</p>
+        <p class="class-1-2">Probability & Statstics</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <p class="class-1-1">CS 405</p>
+        <p class="class-1-2">Linux w/ Appl Program</p>
+        <p class="class-1-3"><i>3 hrs</i></p>
+        <div class="total-hrs">
+            <p class="title-4">TOTAL HOURS:</p>
+        </div>
+        <div class="textbox-5">
+            <p class="credit-hours">18 hrs</p>
+        </div>
+    </div>
+    <div class="overlap-group-7">
+        <p style="font-weight: 700">RESOURCES</p>
+        <p style="font-weight: 600"><a href="https://lsrfichewb.aamu.edu/Forms/undergraduate-major-minor-concentration-declaration-change-form">Major/Minor Change Form</a></p>
+        <p style="font-weight: 600"><a href="https://lsrfichewb.aamu.edu/Forms/override-prerequisite-request-form">Course Override Form</a></p>
+        <p style="font-weight: 600"><a href="https://lsrfichewb.aamu.edu/Forms/excuse-request-form">University Excuse Form</a></p>
+        <p style="font-weight: 600"><a href="https://lsrfichewb.aamu.edu/Forms/bulletin-acknowledgement">Change Bulletin Form</a></p>
+        <p style="font-weight: 600"><a href="https://lsrfichewb.aamu.edu/Forms/departmental-transfer-credits-substitution-form">Transfer Credit Substitution Form</a></p>
+    </div>
 </body>
 </html>

@@ -168,3 +168,18 @@ select * from compSciCourses
 
 -- INSERT INTO compSciCourses (CourseNumber, CourseTitle, CourseCategory, Hours)
 -- VALUES ('CS 490', 'High Performance Computing', 'CS Elective', 3)
+
+INSERT INTO compSciCourses (CourseNumber, CourseTitle, CourseCategory, Hours)
+VALUES ('CS 102', 'Intro to Programming I', 'CS Minor', 3)
+
+INSERT INTO compSciCourses (CourseNumber, CourseTitle, CourseCategory, Hours)
+VALUES ('CS 104', 'Intro to Computers & Ethics', 'CS Minor', 3)
+
+INSERT INTO compSciCourses (CourseNumber, CourseTitle, CourseCategory, Hours)
+VALUES ('CS 109', 'Intro to Programming II', 'CS Minor', 3)
+
+INSERT INTO compSciCourses (CourseNumber, CourseTitle, CourseCategory, Hours)
+VALUES ('CS 203', 'Discrete Structures', 'CS Minor', 3)
+
+INSERT INTO compSciCourses (CourseNumber, CourseTitle, CourseCategory, Hours)
+VALUES ('CS 206', 'Intro to Java Programming I', 'CS Minor', 3)
